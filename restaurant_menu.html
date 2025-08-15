@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Golden Byte Diner</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background-color: #ffcc00;
+      padding: 20px;
+      text-align: center;
+    }
+    #header-img {
+      width: 100px;
+      height: auto;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    h1 {
+      margin: 10px 0;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    article {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 10px 0;
+      background-color: #fff;
+    }
+    article img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    form input[type="number"],
+    form textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form label {
+      font-weight: bold;
+    }
+    form input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Golden Byte Diner</h1>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#order-form">Order Form</a>
+  </nav>
+</header>
+
+<main>
+  <section id="menu">
+    <h2>Menu</h2>
+
+    <article>
+      <img src="https://media.istockphoto.com/id/610747100/photo/tasty-grilled-burger-with-lettuce-and-mayonnaise-rustic-wooden-table.jpg?s=612x612&w=0&k=20&c=1_SNWPlD1oF_0vSGKQBtlRxzZ2iqqNpYc-EjTKT5cuY=" alt="Classic Burger">
+      <h3>Classic Burger</h3>
+      <p>A juicy beef patty with lettuce, tomato, and our secret sauce. <em>$8.99</em></p>
+    </article>
+
+    <article>
+      <img src="https://media.istockphoto.com/id/1443232814/photo/close-up-a-piece-of-pizza-out-of-the-box.jpg?s=612x612&w=0&k=20&c=PIsvD_TrPUEI2UmLnDelGpUMNqZraf50JopeW-4E458=" alt="Pepperoni Pizza">
+      <h3>Pepperoni Pizza</h3>
+      <p>Crispy thin crust topped with pepperoni, mozzarella, and fresh herbs. <em>$12.50</em></p>
+    </article>
+
+    <article>
+      <img src="https://media.istockphoto.com/id/1987499256/photo/salad-in-black-bowl-at-dark-background.jpg?s=612x612&w=0&k=20&c=zLFlkSIMe5n4noxTeKDy89QX7XUXgwpslfaXUjF-cr8=" alt="Garden Salad">
+      <h3>Garden Salad</h3>
+      <p>Fresh greens tossed with tomatoes, cucumbers, and a light vinaigrette. <em>$6.75</em></p>
+    </article>
+  </section>
+
+  <section id="order-form">
+    <h2>Place Your Order</h2>
+
+    <form>
+      <label for="burger">Number of Classic Burgers:</label>
+      <input type="number" id="burger" name="burger" min="0">
+
+      <label for="pizza">Number of Pepperoni Pizzas:</label>
+      <input type="number" id="pizza" name="pizza" min="0">
+
+      <label for="salad">Number of Garden Salads:</label>
+      <input type="number" id="salad" name="salad" min="0">
+
+      <p><strong>Select your side:</strong></p>
+      <label><input type="radio" name="side" value="fries"> Fries</label><br>
+      <label><input type="radio" name="side" value="salad"> Side Salad</label><br>
+      <label><input type="radio" name="side" value="chips"> Chips</label><br>
+
+      <p><strong>Add-ons:</strong></p>
+      <label><input type="checkbox" name="addon" value="extra_cheese"> Extra Cheese</label><br>
+      <label><input type="checkbox" name="addon" value="bacon"> Bacon</label><br>
+      <label><input type="checkbox" name="addon" value="guac"> Guacamole</label><br>
+
+      <label for="requests">Special Requests:</label>
+      <textarea id="requests" name="requests" rows="4" placeholder="e.g. No onions on burger..."></textarea>
+
+      <input type="submit" value="Go To Checkout">
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>Made with love by Samer</p>
+</footer>
+
+</body>
+</html>
